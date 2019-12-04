@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>URL Shortener</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+        <h2>API Project: URL Shortener Microservice</h2>
+        
+        <h3>Short URL Creation </h3>
+
+        <form action="api/shorturl/new" method="POST">
+          <label for="url_input"><strong>URL to be shortened:</strong></label>
+          <input id="url_input" type="text" name="url" value="">
+          <input type="submit" value="POST URL">
+        </form>
+        <h3>Example Usage:</h3>
+        <a href="https://thread-paper.glitch.me/api/shorturl/3">
+          http://maddening-homburg.glitch.me/api/shorturl/3
+        </a>
+
+        <h3>Will Redirect to:</h3>
+        <p>https://www.freecodecamp.org/forum/</p>
+      </div>
+      <div class="footer">
+        <p>
+          Made by Liam Washburn for <a href="https://www.freecodecamp.org">freeCodeCamp</a>'s API's and Microservices certification <br /> <br />
+          <strong>Technologies used:</strong> JavaScript, HTML, Node.js, Mongoose, MongoDB and Express
+        </p>
+      </div>
+   </body>
+
+
+</html>
